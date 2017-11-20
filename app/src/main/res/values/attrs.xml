@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlexButtonAttr">
+        <attr name="isSelectOnlyOne" format="boolean" />
+        <attr name="isShowSelectAll" format="boolean" />
+        <attr name="btnMarginTop" format="integer" />
+        <attr name="btnMarginLeft" format="integer" />
+        <attr name="btnMarginBottom" format="integer" />
+        <attr name="btnMarginRight" format="integer" />
+        <attr name="btnWidth" format="integer" />
+        <attr name="btnHeight" format="integer" />
+        <attr name="btnBorderSize" format="integer" />
+        <attr name="btnTextSize" format="integer" />
+        <attr name="btnRadius" format="integer" />
+
+        <attr name="btnBorderColor" format="color" />
+        <attr name="btnBgColor" format="color" />
+        <attr name="btnTextColor" format="color" />
+        <attr name="btnfocusColor" format="color" />
+        <attr name="btnDisplayBgColor" format="color" />
+        <attr name="btnDisplayTextColor" format="color" />
+        <attr name="btnUnSelectTextColor" format="color" />
+    </declare-styleable>
+</resources>
