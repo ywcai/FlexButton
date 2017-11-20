@@ -99,6 +99,16 @@ public class FlexButtonLayout extends FlexboxLayout {
 
     public void setDataAdapter(List<String> listText) {
         tags = listText;
+        if(tags==null)
+        {
+            invalidate();
+            return;
+        }
+        if(tags.size()<=0)
+        {
+            invalidate();
+            return;
+        }
         selectIndex = new int[tags.size()];
         selectIndex[0] = 1;
         currentIndex = -1;
@@ -109,6 +119,14 @@ public class FlexButtonLayout extends FlexboxLayout {
         //清除示列的标签
         this.removeAllViews();
         //绘制自定义的数据标签;
+        if(tags==null)
+        {
+            return;
+        }
+        if(tags.size()<=0)
+        {
+            return;
+        }
         createTag();
         //重新绘制全选、取消键
         if (!isSelectOnlyOne && isShowSelectAll) {
