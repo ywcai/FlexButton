@@ -56,25 +56,25 @@ public class FlexButtonLayout extends FlexboxLayout {
 
     public void initStaticAttr(Context context, AttributeSet attrs, int defStyle) {
         TypedArray a = context.obtainStyledAttributes(
-                attrs, R.styleable.FlexButtonAttr, defStyle, 0);
-        isSelectOnlyOne = a.getBoolean(R.styleable.FlexButtonAttr_isSelectOnlyOne, false);
-        isShowSelectAll = a.getBoolean(R.styleable.FlexButtonAttr_isShowSelectAll, true);
-        btnBorderColor = a.getColor(R.styleable.FlexButtonAttr_btnBorderColor, ContextCompat.getColor(context, R.color.LOrange));
-        btnBgColor = a.getColor(R.styleable.FlexButtonAttr_btnBgColor, ContextCompat.getColor(context, R.color.LOrange));
-        btnfocusColor = a.getColor(R.styleable.FlexButtonAttr_btnfocusColor, ContextCompat.getColor(context, R.color.LOrange));
-        btnUnSelectTextColor = a.getColor(R.styleable.FlexButtonAttr_btnUnSelectTextColor, ContextCompat.getColor(context, R.color.LDarkLight));
-        btnDisplayBgColor = a.getColor(R.styleable.FlexButtonAttr_btnDisplayBgColor, ContextCompat.getColor(context, R.color.LDarkLight));
-        btnDisplayTextColor = a.getColor(R.styleable.FlexButtonAttr_btnDisplayTextColor, Color.WHITE);
-        btnTextColor = a.getColor(R.styleable.FlexButtonAttr_btnDisplayTextColor, Color.WHITE);
-        btnMarginTop = a.getInteger(R.styleable.FlexButtonAttr_btnMarginTop, 10);
-        btnMarginLeft = a.getInteger(R.styleable.FlexButtonAttr_btnMarginLeft, 10);
-        btnMarginBottom = a.getInteger(R.styleable.FlexButtonAttr_btnMarginBottom, 10);
-        btnMarginRight = a.getInteger(R.styleable.FlexButtonAttr_btnMarginRight, 10);
-        btnWidth = a.getInteger(R.styleable.FlexButtonAttr_btnWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
-        btnHeight = a.getInteger(R.styleable.FlexButtonAttr_btnHeight, ViewGroup.LayoutParams.WRAP_CONTENT);
-        btnRadius = a.getInteger(R.styleable.FlexButtonAttr_btnRadius, 4);
-        btnTextSize = a.getInteger(R.styleable.FlexButtonAttr_btnTextSize, 10);
-        btnBorderSize = a.getInteger(R.styleable.FlexButtonAttr_btnBorderSize, 1);
+                attrs, R.styleable.FlexButtonLayout, defStyle, 0);
+        isSelectOnlyOne = a.getBoolean(R.styleable.FlexButtonLayout_isSelectOnlyOne, false);
+        isShowSelectAll = a.getBoolean(R.styleable.FlexButtonLayout_isShowSelectAll, true);
+        btnBorderColor = a.getColor(R.styleable.FlexButtonLayout_btnBorderColor, ContextCompat.getColor(context, R.color.LOrange));
+        btnBgColor = a.getColor(R.styleable.FlexButtonLayout_btnBgColor, ContextCompat.getColor(context, R.color.LOrange));
+        btnfocusColor = a.getColor(R.styleable.FlexButtonLayout_btnfocusColor, ContextCompat.getColor(context, R.color.LOrange));
+        btnUnSelectTextColor = a.getColor(R.styleable.FlexButtonLayout_btnUnSelectTextColor, ContextCompat.getColor(context, R.color.LDarkLight));
+        btnDisplayBgColor = a.getColor(R.styleable.FlexButtonLayout_btnDisplayBgColor, ContextCompat.getColor(context, R.color.LDarkLight));
+        btnDisplayTextColor = a.getColor(R.styleable.FlexButtonLayout_btnDisplayTextColor, Color.WHITE);
+        btnTextColor = a.getColor(R.styleable.FlexButtonLayout_btnDisplayTextColor, Color.WHITE);
+        btnMarginTop = a.getInteger(R.styleable.FlexButtonLayout_btnMarginTop, 10);
+        btnMarginLeft = a.getInteger(R.styleable.FlexButtonLayout_btnMarginLeft, 10);
+        btnMarginBottom = a.getInteger(R.styleable.FlexButtonLayout_btnMarginBottom, 10);
+        btnMarginRight = a.getInteger(R.styleable.FlexButtonLayout_btnMarginRight, 10);
+        btnWidth = a.getInteger(R.styleable.FlexButtonLayout_btnWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
+        btnHeight = a.getInteger(R.styleable.FlexButtonLayout_btnHeight, ViewGroup.LayoutParams.WRAP_CONTENT);
+        btnRadius = a.getInteger(R.styleable.FlexButtonLayout_btnRadius, 4);
+        btnTextSize = a.getInteger(R.styleable.FlexButtonLayout_btnTextSize, 10);
+        btnBorderSize = a.getInteger(R.styleable.FlexButtonLayout_btnBorderSize, 1);
         a.recycle();
     }
 

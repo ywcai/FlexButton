@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="FlexButtonAttr">
+    <declare-styleable name="FlexButtonLayout">
         <attr name="isSelectOnlyOne" format="boolean" />
         <attr name="isShowSelectAll" format="boolean" />
         <attr name="btnMarginTop" format="integer" />
