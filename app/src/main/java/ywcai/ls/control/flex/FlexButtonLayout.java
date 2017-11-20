@@ -72,10 +72,10 @@ public class FlexButtonLayout extends FlexboxLayout {
         btnMarginBottom = a.getInteger(R.styleable.FlexButtonLayout_btnMarginBottom, 10);
         btnMarginRight = a.getInteger(R.styleable.FlexButtonLayout_btnMarginRight, 10);
 
-        btnPaddingTop = a.getInteger(R.styleable.FlexButtonLayout_btnMarginTop, 5);
-        btnPaddingLeft = a.getInteger(R.styleable.FlexButtonLayout_btnMarginLeft, 10);
-        btnPaddingBottom = a.getInteger(R.styleable.FlexButtonLayout_btnMarginBottom, 5);
-        btnPaddingRight = a.getInteger(R.styleable.FlexButtonLayout_btnMarginRight, 10);
+        btnPaddingTop = a.getInteger(R.styleable.FlexButtonLayout_btnPaddingTop, 5);
+        btnPaddingLeft = a.getInteger(R.styleable.FlexButtonLayout_btnPaddingLeft, 10);
+        btnPaddingBottom = a.getInteger(R.styleable.FlexButtonLayout_btnPaddingBottom, 5);
+        btnPaddingRight = a.getInteger(R.styleable.FlexButtonLayout_btnPaddingRight, 10);
 
         btnWidth = a.getInteger(R.styleable.FlexButtonLayout_btnWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
         btnHeight = a.getInteger(R.styleable.FlexButtonLayout_btnHeight, ViewGroup.LayoutParams.WRAP_CONTENT);
