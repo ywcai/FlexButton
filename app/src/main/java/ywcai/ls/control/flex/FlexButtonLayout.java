@@ -22,7 +22,8 @@ public class FlexButtonLayout extends FlexboxLayout {
     private boolean isSelectOnlyOne, isShowSelectAll;
     private int[] selectIndex;
     private int currentIndex;
-    private int btnMarginTop, btnMarginLeft, btnMarginBottom, btnMarginRight, btnBorderSize;
+    private int btnMarginTop, btnMarginLeft, btnMarginBottom, btnMarginRight, btnBorderSize,
+            btnPaddingTop, btnPaddingLeft, btnPaddingBottom, btnPaddingRight;
     private int btnWidth, btnHeight, btnTextSize, btnRadius;
     private int
             btnBorderColor,
@@ -70,6 +71,12 @@ public class FlexButtonLayout extends FlexboxLayout {
         btnMarginLeft = a.getInteger(R.styleable.FlexButtonLayout_btnMarginLeft, 10);
         btnMarginBottom = a.getInteger(R.styleable.FlexButtonLayout_btnMarginBottom, 10);
         btnMarginRight = a.getInteger(R.styleable.FlexButtonLayout_btnMarginRight, 10);
+
+        btnPaddingTop = a.getInteger(R.styleable.FlexButtonLayout_btnMarginTop, 5);
+        btnPaddingLeft = a.getInteger(R.styleable.FlexButtonLayout_btnMarginLeft, 10);
+        btnPaddingBottom = a.getInteger(R.styleable.FlexButtonLayout_btnMarginBottom, 5);
+        btnPaddingRight = a.getInteger(R.styleable.FlexButtonLayout_btnMarginRight, 10);
+
         btnWidth = a.getInteger(R.styleable.FlexButtonLayout_btnWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
         btnHeight = a.getInteger(R.styleable.FlexButtonLayout_btnHeight, ViewGroup.LayoutParams.WRAP_CONTENT);
         btnRadius = a.getInteger(R.styleable.FlexButtonLayout_btnRadius, 4);
@@ -230,7 +237,7 @@ public class FlexButtonLayout extends FlexboxLayout {
         fancyButton.setRadius(btnRadius);
         fancyButton.setTextSize(btnTextSize);
         fancyButton.setBorderWidth(btnBorderSize);
-        fancyButton.setPadding(20, 10, 20, 10);
+        fancyButton.setPadding(btnPaddingLeft, btnPaddingTop, btnPaddingRight, btnPaddingBottom);
         LayoutParams lay = new LayoutParams(btnWidth, btnHeight);
         lay.setMargins(btnMarginLeft, btnMarginTop, btnMarginRight, btnMarginBottom);
         fancyButton.setLayoutParams(lay);

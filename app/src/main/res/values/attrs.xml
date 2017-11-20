@@ -7,6 +7,12 @@
         <attr name="btnMarginLeft" format="integer" />
         <attr name="btnMarginBottom" format="integer" />
         <attr name="btnMarginRight" format="integer" />
+
+        <attr name="btnPaddingTop" format="integer" />
+        <attr name="btnPaddingLeft" format="integer" />
+        <attr name="btnPaddingBottom" format="integer" />
+        <attr name="btnPaddingRight" format="integer" />
+
         <attr name="btnWidth" format="integer" />
         <attr name="btnHeight" format="integer" />
         <attr name="btnBorderSize" format="integer" />
