@@ -101,7 +101,7 @@ public class FlexButtonLayout extends FlexboxLayout {
         tags = listText;
         selectIndex = new int[tags.size()];
         selectIndex[0] = 1;
-        currentIndex = 0;
+        currentIndex = -1;
         invalidate();
     }
 
@@ -295,6 +295,10 @@ public class FlexButtonLayout extends FlexboxLayout {
     //单选选模式下适用
     public void setCurrentIndex(int pos) {
         if (!isSelectOnlyOne) {
+            return;
+        }
+        if(pos<0)
+        {
             return;
         }
         if (pos < tags.size()) {
