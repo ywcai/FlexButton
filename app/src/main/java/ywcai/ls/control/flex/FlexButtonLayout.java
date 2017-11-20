@@ -142,9 +142,12 @@ public class FlexButtonLayout extends FlexboxLayout {
                 //如果点击的按钮现在本身已经被选择，当选标签的情况下则不作任何处理
                 if (!isSelectItem) {
                     //先改变上一次选择的标签;
-                    FancyButton prevSelect = ((FancyButton) ((FlexboxLayout) v.getParent()).getChildAt(currentIndex));
-                    //将选择按钮位置同步为当前选择的位置
-                    setBtnSelectStatus(prevSelect, false);
+
+                    if(currentIndex>=0) {
+                        FancyButton prevSelect = ((FancyButton) ((FlexboxLayout) v.getParent()).getChildAt(currentIndex));
+                        //将选择按钮位置同步为当前选择的位置
+                        setBtnSelectStatus(prevSelect, false);
+                    }
                     currentIndex = pos;
                     //改变当前选择的按钮的状态
                     setBtnSelectStatus((FancyButton) v, true);
@@ -297,14 +300,15 @@ public class FlexButtonLayout extends FlexboxLayout {
         if (!isSelectOnlyOne) {
             return;
         }
-        if(pos<0)
-        {
+        if (pos < 0) {
             return;
         }
-        if (pos < tags.size()) {
-            FancyButton prevSelect = (FancyButton) this.getChildAt(currentIndex);
+        if (pos < tags.size() && pos >= 0) {
+            if (currentIndex >= 0) {
+                FancyButton prevSelect = (FancyButton) this.getChildAt(currentIndex);
+                setBtnSelectStatus(prevSelect, false);
+            }
             FancyButton currentSelect = (FancyButton) this.getChildAt(pos);
-            setBtnSelectStatus(prevSelect, false);
             setBtnSelectStatus(currentSelect, true);
             this.currentIndex = pos;
         }
